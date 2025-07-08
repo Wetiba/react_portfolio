@@ -1,16 +1,16 @@
-import { useState } from "react";
-
 function Home() {
-    const [showMore, setShowMore] = useState(false);
-
     return (
         <div>
-            <h1>Welcome to My Portfolio</h1>
-            <p>I am a React Developer!</p>
-            {showMore && <p>I also enjoy backend development and teaching.</p>}
-            <button onClick={() => setShowMore(!showMore)}>
-                {showMore ? "Show Less" : "Show More"}
-            </button>
+            <h1>Erick Wetiba Were</h1>
+            <p>
+                I’m a Senior Software Engineer with over 7 years of experience building scalable web
+                applications and APIs using ReactJS and Python Django. I specialize in designing full-stack
+                solutions that deliver seamless user experiences and high performance.
+            </p>
+            <p>
+                I’m passionate about clean architecture, DevOps practices, and mentoring junior developers.
+                My mission is to craft impactful software that solves real-world problems.
+            </p>
         </div>
     );
 }

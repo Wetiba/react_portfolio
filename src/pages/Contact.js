@@ -1,17 +1,15 @@
-import { useState } from "react";
-
 function Contact() {
     const [form, setForm] = useState({ name: "", message: "" });
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`Thanks ${form.name}, we received your message!`);
+        alert(`Thanks ${form.name}, I’ll get back to you soon!`);
         setForm({ name: "", message: "" });
     };
 
     return (
         <form onSubmit={handleSubmit}>
-            <h2>Contact Me</h2>
+            <h2>Contact Erick Wetiba Were</h2>
             <input
                 placeholder="Your Name"
                 value={form.name}
