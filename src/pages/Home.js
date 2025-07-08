@@ -1,23 +1,28 @@
-import { FaReact, FaPython, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaReact, FaPython, FaLinkedin, FaGithub, FaDownload } from "react-icons/fa";
 
 function Home() {
     return (
-        <div style={{ textAlign: "center" }}>
-            <img src="/eric.jpeg" alt="Erick Wetiba Were" width="150" style={{ borderRadius: "50%" }} />
+        <div className="home-container">
+            <img src="/eric.jpeg" alt="Erick Wetiba Were" className="profile-img" />
             <h1>Erick Wetiba Were</h1>
-            <p>
+            <p className="subtitle">
                 <FaReact color="#61DBFB" /> ReactJS | <FaPython color="#306998" /> Django | Full-Stack Dev
             </p>
-            <p>
+
+            <p className="intro">
                 I’m a Senior Software Engineer with 7+ years of experience building scalable web apps and APIs.
-                I lead software teams, mentor devs, and craft enterprise-grade solutions.
+                I lead software teams, mentor developers, and build enterprise-grade solutions.
             </p>
-            <div style={{ fontSize: "1.5rem" }}>
-                <a href="https://linkedin.com/in/erickwere" target="_blank" rel="noreferrer">
-                    <FaLinkedin />
-                </a>{" "}
-                <a href="https://github.com/erickwere" target="_blank" rel="noreferrer">
-                    <FaGithub />
+
+            <div className="home-buttons">
+                <a href="/erick_cv.pdf" download className="btn">
+                    <FaDownload /> Download CV
+                </a>
+                <a href="https://linkedin.com/in/erickwere" target="_blank" rel="noreferrer" className="btn outline">
+                    <FaLinkedin /> LinkedIn
+                </a>
+                <a href="https://github.com/erickwere" target="_blank" rel="noreferrer" className="btn outline">
+                    <FaGithub /> GitHub
                 </a>
             </div>
         </div>
