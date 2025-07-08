@@ -3,23 +3,33 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .navbar {
-  background: #333;
-  color: #fff;
+  background: #222;
+  color: white;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar a {
-  margin-left: 1rem;
-  color: yellow;
+  color: #61dafb;
+  margin: 0 1rem;
   text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
 }
 
 .container {
   padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+img {
+  border-radius: 8px;
 }
 
 form {
@@ -38,4 +48,7 @@ button {
   background-color: #333;
   color: white;
   border: none;
+}
+img {
+  border-radius: 8px;
 }

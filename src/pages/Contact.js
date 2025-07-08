@@ -1,3 +1,5 @@
+import {useState} from "react";
+
 function Contact() {
     const [form, setForm] = useState({ name: "", message: "" });
 
